@@ -4,16 +4,16 @@ This is an Individual Project(Time Series Signal Analysis with Machine Learning)
 Raw Data retrieval from FIUS Red Pitaya Ultrasonic Sensor System, Time Series Data Analysis, Data Preprocessing, Data Modelling, Convolutional Neural Network Deployment, Training in MobileNetv2, Human Presence Detection, Redpitaya embedded System
 
 # Data Acquisition
-As this project's goal is to find the driver's or passenger's height estimation using SONAR system, we used Red Pitaya Ultrasonic device for the data acquisition purpose. RedPitaya Ultrasonic system is a powerful hardware and software platform designed for ultrasonic measurements. At the core of the RedPitaya Ultrasonic system is the RedPitaya board, which is a credit card-sized device that houses the digitizer and field-programmable gate array (FPGA) which has two high-speed analog input channels with sampling rates up to 125 MS/s and a resolution of 14 bits.
+As this project's goal is to find the human presence in office environment using SONAR system (time series signal), Red Pitaya is used for embedded system for Ultrasonic sensor data acquisition purpose. RedPitaya Ultrasonic system is a powerful hardware and software platform designed for ultrasonic measurements. At the core of the RedPitaya Ultrasonic system is the RedPitaya board, which is a credit card-sized device that houses the digitizer and field-programmable gate array (FPGA) which has two high-speed analog input channels with sampling rates up to 125 MS/s and a resolution of 14 bits.
 
 ![image](https://github.com/ShafaitAzam/Deep-Learning-Project-1/assets/59325753/f236aa41-4d69-4b4d-9a7a-1193ad0dfe7b)
 
 Fig: Red Pitaya Ultrasonic System used in the project.
-In the Image below car set up for height estimation is showed. On the dashboard two Red Pitaya ultrasonic sensors werw placed focusing on upper part and lower part of the seat. We used a card board box to measure the inteference of the card board to find out how much area is covered by each of the sensors. Then mathematically calculated the coverage cones, sensor board's angle to the horizontal line and coverage area of the sensors. Then we acquired ADC signal data through the embeded software working with Red Pitaya.
+In the Image below Office environment set up is shown. On the stand one Red Pitaya ultrasonic sensors were placed focusing on desk and chair. Sitting Standing person and different hard and soft surfaced chairs were used to take Person and object data. Then acquired 30k ADC signal data were used for model training testing and validation purpose.
 
-![image](https://github.com/ShafaitAzam/Deep-Learning-Project-1/assets/59325753/6ea024c0-6010-48fe-ae9c-2e1756d41037)
+![lab setup](https://github.com/javedcoding/Person-Detection-Using-SONOR-Signal-and-MobileNetV2/assets/59325753/b9402131-3116-4467-9945-25e2c05045e2)
 
-Fig: Calculation Procedure of 2 Sensors' Coverage Range
+Fig: Set up for Lab data acquisition
 
 # Data Repository
 As the data file is big the ADC data retrieved from two SONAR sensors attached with Radpitaya can be downloaded from below links
